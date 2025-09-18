@@ -1,0 +1,34 @@
+:root {
+    --color-grey-900: hsl(234, 29%, 20%);
+    --color-grey-800: hsl(235, 18%, 26%);
+    --color-grey-200: hsl(231, 7%, 60%);
+
+    --color-white: hsl(0, 0%, 100%);
+
+    --color-tomato-500: hsl(4, 100%, 67%);
+    --color-tomato-700: hsla(4, 100%, 67%, 15%);
+
+    --gradient-tomato: linear-gradient(90deg, rgba(255, 84, 118, 100%) 0%, rgba(255, 98, 87, 100%) 100%);
+
+    --shadow-tomato: 0 16px 28px 0 hsla(13, 100%, 62%, 40%);
+    --shadow-grey: rgba(0, 0, 0, 16%) 0 10px 36px 0, rgba(0, 0, 0, 6%) 0 0 0 1px;
+
+    --font-primary: "Roboto", sans-serif;
+    --font-normal: 400;
+    --font-bold: 700;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-3xl: 2.5rem;
+    --text-4xl: 3.5rem;
+
+    --leading-none: 1;
+
+    --focus-outline-width: 3px;
+    --focus-outline-offset: 3px;
+    --focus-outline-style: dashed;
+    --focus-outline-color: var(--color-tomato-500);
+}
+
+@custom-media --tablet (min-width: 54em);

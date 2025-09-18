@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="subscription">
+        <picture class="subscription__picture">
+          <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 48em)" />
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+        </picture>
+        <section class="subscription__content">
+          <h1 class="subscription__title">Stay updated!</h1>
+          <p class="subscription__description">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="subscription__benefits">
+            <li class="subscription__benefits-item">Product discovery and building what matters</li>
+            <li class="subscription__benefits-item">Measuring to ensure updates are a success</li>
+            <li class="subscription__benefits-item">And much more!</li>
+          </ul>
+
+          <form class="subscription__form" id="subscription-form" novalidate>
+            <div class="text-field">
+              <div class="text-field__label-wrapper">
+                <label class="text-field__label" for="email-input">Email address </label>
+                <span class="text-field__hint" id="email-input-hint"></span>
+              </div>
+              <input
+                class="text-field__input"
+                id="email-input"
+                type="email"
+                placeholder="email@company.com"
+                required
+                aria-invalid="false"
+                aria-describedby="email-input-hint"
+              />
+            </div>
+            <button class="subscription__submit-btn btn" type="submit">
+              <span>Subscribe to monthly newsletter</span>
+            </button>
+          </form>
+        </section>
+      </div>
+
+      <article class="success" hidden>
+        <img class="success__icon" src="./assets/icons/icon-success.svg" alt="" />
+        <h2 class="success__title">Thanks for subscribing!</h2>
+        <p class="success__description">
+          A confirmation email has been sent to <b>ash@loremcompany.com</b>. Please open it and click the button inside
+          to confirm your subscription.
+        </p>
+        <button class="success__dismiss-btn btn" type="button"><span>Dismiss message</span></button>
+      </article>
+
+      <script type="module" src="./app.ts"></script>
+    </main>
+  </body>
+</html>

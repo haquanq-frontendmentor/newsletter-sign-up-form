@@ -1,0 +1,47 @@
+.btn {
+    position: relative;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    padding-block: 1.375rem 1.125rem;
+    font-weight: var(--font-bold);
+    color: var(--color-white);
+    transition: transform 300ms ease;
+    width: 100%;
+    background-color: var(--color-grey-900);
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::after {
+        z-index: 1;
+        position: absolute;
+        border-radius: inherit;
+        content: "";
+        inset: 0;
+        opacity: 0;
+        transition: opacity 250ms ease;
+        background: var(--gradient-tomato);
+        box-shadow: var(--shadow-tomato);
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+
+    @media (hover: hover) {
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+}

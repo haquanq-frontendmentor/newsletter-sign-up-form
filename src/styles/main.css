@@ -1,0 +1,17 @@
+@import "./base/fonts.css";
+@import "./base/variables.css";
+@import "./base/reset.css";
+
+@import "./components/button.css";
+@import "./components/text-field.css";
+@import "./components/subscription.css";
+@import "./components/success.css";
+
+.main {
+    min-height: 100vh;
+
+    @media (--tablet) {
+        padding-block-start: clamp(6.25rem, 20vw - 4rem, 13.6875rem);
+        padding-block-end: clamp(6.25rem, 20vw - 4rem, 13.75rem);
+    }
+}
